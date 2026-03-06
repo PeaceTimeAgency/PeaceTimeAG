@@ -1,1 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Custom typography – keep it legible & friendly */
+html {
+  scroll-behavior: smooth;
+  font-family: theme('fontFamily.sans');
+}
+
+/* Simple focus outline for accessibility */
+:focus-visible {
+  outline: 2px solid theme('colors.sky');
+  outline-offset: 2px;
+}
